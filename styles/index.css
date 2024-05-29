@@ -1,0 +1,50 @@
+
+#section1 {
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 20rem;
+}
+
+#section .link {
+  padding: 1rem;
+  background-color: #c7c7c7;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#left {
+  text-align: center;
+  width:40%;
+  float: left;
+  background-color: var(--bg-color);
+  padding: 4rem;
+  padding-bottom: 0rem;
+  height: 70%;
+  font-size: 1.2rem;
+}
+
+#left p {
+  background-color: #484848;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  border: 8px inset gray /*var(--bg-color); */
+}
+
+#right {
+  text-align: center;
+  width:40%;
+  float: right;
+  background-color: var(--bg-color);
+  padding: 2rem;
+  height: 70%;
+  font-size: 1.2rem;
+  left: 50%;
+}
+
+#right img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}

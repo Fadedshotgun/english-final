@@ -1,0 +1,119 @@
+:root {
+  --bg-color: #101010;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0rem;
+  margin: 0rem;
+  overflow-x: show;
+  background-color: var(--bg-color);
+}
+
+#navbar {
+  z-index: 100;
+  transition: top .2s;
+  position: sticky;
+  background-color: var(--bg-color);;
+  height: 10%;
+  padding: 1rem;
+  overflow-x: visible;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  /* transition: */
+    /* -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .05rem; */
+  top:0;
+}
+
+#navbar-right {
+  float: right;
+}
+
+#navbar-right a {
+  transition: background-color .2s, border-radius .2s;
+  padding: .5rem;
+  font-weight: normal;
+  font-size: 1.3rem;
+  padding-bottom: .3rem;
+  background-color: #262626;
+  border-radius: .4rem;
+  text-decoration: none;
+  color: white;
+}
+
+.currentpage {
+  border: 1px solid white
+}
+
+#navbar-right a:hover {
+  background-color: #373737;
+  border-radius: 0rem;
+}
+
+.page-heading {
+  padding: 6rem;
+  width: auto;
+  margin: 0;
+  color: white;
+  background-image: url("../images/grey.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.page-heading h1 {
+  animation: fade-in 1s forwards;
+  font-size: 5rem;
+}
+
+#footer {
+  position: fixed;
+  left: 88%;
+  background-color: white;
+  border-color: #666666;
+  border-width: 2px;
+  border-style: solid;
+  bottom: -0%;
+  width: 10%;
+  height: 15%;
+  padding: .5rem;
+  border-radius: 0.5rem;
+}
+
+#seperator {
+  width: 100%;
+  background-color: white;
+  color: white;
+  height: 1px;
+  font-size: 0px;
+}
+
+#bar {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  color: #130c0c;
+  border-radius: 1rem;
+  font-size: .2rem;
+  width: 40%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
